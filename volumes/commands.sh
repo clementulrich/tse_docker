@@ -22,5 +22,11 @@ docker run -v filedata:/tmp --name alpine_shell -it alpine sh
 # touch /tmp/file.txt
 
 # stop and delete container alpine_shell
+# exit
+# docker rm alpine_shell
+
 # re-create a container using same volume mounted on /tmp
+# docker run -v filedata:/tmp -it alpine sh
+
 # see created file is here !
+# ls /tmp/
